@@ -2,7 +2,7 @@
 print ("Bienvenido a mi trivia sobre basquet-NBA")
 print ("Pondremos a prueba tus conocimientos")
 
-print ("Responder las siguientes preguntas escribiendo la letra de la alternativa y presionando 'Entrer' para enviar tu respuesta:\n")
+print ("Responder las siguientes preguntas escribiendo la letra de la alternativa y presionando 'Enter' para enviar tu respuesta:\n")
 
 print ("1) ¿Quién tiene mas triples anotados en la NBA?")
 print ("a) Lebron James")
