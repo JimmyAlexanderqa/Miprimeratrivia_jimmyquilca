@@ -63,11 +63,11 @@ while iniciar_trivia == True:
 
   time.sleep(1)
   
-  respuesta_1= input("\nTu respuesta: ")
+  respuesta_1= input("\nTu respuesta: ").lower()
   
   time.sleep(1)
   
-  while respuesta_1 not in ("a", "b", "c", "d", "A", "B", "C","D", "x"):
+  while respuesta_1 not in ("a", "b", "c", "d", "x"):
     respuesta_1 = input("Debes responder a, b, c o d. Ingresa nuevamente tu respuesta: ")
   
   
@@ -89,19 +89,7 @@ while iniciar_trivia == True:
     puntaje += 10
     print(GREEN+"MARAVILLOSO", nombre, "!",",", "Stephen Curry es el mejor triplista de la historia, y sigue activo, una cosa de locos"+RESET)
 
-  if respuesta_1 == "A":
-    puntaje += -5
-    print(RED+"INCORRECTO, ANIMOS!", nombre,",", "Lebron James no es el mejor triplista, pero es uno de los mejores jugadores de la historia"+RESET)
-  elif respuesta_1 == "B":
-    puntaje += -5
-    print(RED+"LASTIMA!", nombre,",", "Michael Jordan no es el mejor triplista, pero tiene dos triples campeonatos consecutivos"+RESET)
-  elif respuesta_1 == "C":
-    puntaje += -5
-    print(RED+"CERCA!", nombre,",", "Klay Thompson no es el mejor triplista, pero tiene el record de mas triples en un quarto de juego"+RESET)
-  elif respuesta_1 == "D":
-    puntaje += 10
-    print(GREEN+"MARAVILLOSO", nombre, "!",",", "Stephen Curry es el mejor triplista de la historia, y sigue activo, una cosa de locos"+RESET)
-    
+  
   print (nombre, "tienes", puntaje, "puntos")
 
   print("Siguiente...")
@@ -115,9 +103,9 @@ while iniciar_trivia == True:
   
   time.sleep(1)
   
-  respuesta_2 = input("\nTu respuesta: ")
+  respuesta_2 = input("\nTu respuesta: ").lower()
   
-  while respuesta_2 not in ("a", "b", "c", "d", "A","B","C","D"):
+  while respuesta_2 not in ("a", "b", "c", "d"):
     respuesta_2 = input("Debes responder a, b, c o d. Ingresa nuevamente tu respuesta: ")
   
   
@@ -135,18 +123,6 @@ while iniciar_trivia == True:
     puntaje += 10
     print(GREEN+"Excelente", nombre, "!",",", "Kareem Abdul-Jabbar es el mayor anotador de la historia y uno de los 10 mejores jugadores de la historia de la NBA"+RESET)
 
-  if respuesta_2 == "A":
-    puntaje += -5
-    print(RED+"INCORRECTO, ANIMOS!", nombre,",", "Michael Jordan no es el mayor anotador de la historia, pero considerado el mejor jugador de este deporte"+RESET)
-  elif respuesta_2 == "B":
-    puntaje += -5
-    print(RED+"Lastima!", nombre,",", "Kobe Bryan no es el mayor anotador de la historia, pero considerado el mejor anotador de los Angeles Lakers"+RESET)
-  elif respuesta_2 == "C":
-    puntaje += -5
-    print(RED+"MUY CERCA!", nombre,",", "Lebron James no es el mayor anotador de la historia, pero se encuentra activo y esta muy cerca"+RESET)
-  elif respuesta_2 == "D":
-    puntaje += 10
-    print(GREEN+"Excelente", nombre, "!",",", "Kareem Abdul-Jabbar es el mayor anotador de la historia y uno de los 10 mejores jugadores de la historia de la NBA"+RESET)
 
   print (nombre, "tienes", puntaje, "puntos")
   
@@ -161,9 +137,9 @@ while iniciar_trivia == True:
   
   time.sleep(1)
   
-  respuesta_3 = input("\nTu respuesta: ")
+  respuesta_3 = input("\nTu respuesta: ").lower()
   
-  while respuesta_3 not in ("a", "b", "c", "d", "A", "B", "C", "D"):
+  while respuesta_3 not in ("a", "b", "c", "d"):
     respuesta_3 = input("Debes responder a, b, c o d. Ingresa nuevamente tu respuesta: ")
   
   if respuesta_3 == "a":
@@ -179,18 +155,6 @@ while iniciar_trivia == True:
     puntaje += 10
     print(GREEN+"NICE", nombre, "!",",", "Bill Russel tiene el mayor numero de anillos obtenidos y un referente de los Boston Celtics"+RESET)
 
-  if respuesta_3 == "A":
-    puntaje += -5
-    print(RED+"LASTIMA!", nombre,",", "Michael Jordan no tiene el mayor numero de anillos obtenidos, pero se lo considera el GOAT del basquet"+RESET)
-  elif respuesta_3 == "B":
-    puntaje += -5
-    print(RED+"INCORRECTO, ANIMOS!", nombre,",", "Stephen Curry no tiene el mayor numero de anillos obtenidos, pero si se le considera el mejor actualmente"+RESET)
-  elif respuesta_3 == "D":
-    puntaje += -5
-    print(RED+"Muy cerca!", nombre,",", "Larry Bird no tiene el mayor numero de anillos obtenidos, pero fue una maquina en su generación"+RESET)
-  elif respuesta_3 == "C":
-    puntaje += 10
-    print(GREEN+"NICE", nombre, "!",",", "Bill Russel tiene el mayor numero de anillos obtenidos y un referente en los Boston Celtics"+RESET)
     
   print (nombre, "tienes", puntaje, "puntos")
   
@@ -205,9 +169,9 @@ while iniciar_trivia == True:
   
   time.sleep(1)
   
-  respuesta_4 = input("\nTu respuesta: ")
+  respuesta_4 = input("\nTu respuesta: ").lower()
   
-  while respuesta_4 not in ("a", "b", "c", "d", "A", "B", "C", "D"):
+  while respuesta_4 not in ("a", "b", "c", "d"):
     respuesta_4 = input("Debes responder a, b, c o d. Ingresa nuevamente tu respuesta: ")
   
   if respuesta_4 == "b":
@@ -223,18 +187,6 @@ while iniciar_trivia == True:
     puntaje += 10
     print(GREEN+"Good", nombre, "!",",", "Los Golden Warriors si fueron campeones y ya suman su 4 campeonato"+RESET)
 
-  if respuesta_4 == "B":
-    puntaje += -5
-    print(RED+"Lastima!", nombre,",", "Los Brooklyn Nets no tienen ningún campeonato de la NBA, pero este año fueron favoritos"+RESET)
-  elif respuesta_4 == "C":
-    puntaje += -5
-    print(RED+"Muy cerca!", nombre,",", "Los Boston Celtics no fueron campeones pero llegaron a la final"+RESET)
-  elif respuesta_4 == "D":
-    puntaje += -5
-    print(RED+"Un poco lejos!", nombre,",", "Los Angeles Lakers no fueron campeones, pero si del año pasado"+RESET)
-  elif respuesta_4 == "A":
-    puntaje += 10
-    print(GREEN+"Good", nombre, "!",",", "Los Golden Warriors si fueron campeones y ya suman su 4 campeonato"+RESET)
     
   print (nombre, "tienes", puntaje, "puntos")
   
@@ -255,9 +207,9 @@ while iniciar_trivia == True:
   
   time.sleep(1)
   
-  respuesta_5 = input("\nTu respuesta: ")
+  respuesta_5 = input("\nTu respuesta: ").lower()
   
-  while respuesta_5 not in ("a", "b", "c", "d", "A","B","C","D"):
+  while respuesta_5 not in ("a", "b", "c", "d"):
     respuesta_5 = input("Debes responder a, b, c o d. Ingresa nuevamente tu respuesta: ")
   
   
@@ -275,18 +227,6 @@ while iniciar_trivia == True:
     print(GREEN+"Grandioso", nombre, "!",",", "Kareem Abdul-Jabbar es el jugador con mas MVP's, multiplicamos tu puntaje debido a que es la pregunta mas dificil de esta trivia"+RESET)
     puntaje = puntaje * 2
 
-  if respuesta_5 == "A":
-    print(RED+"Lastima!", nombre,",", "Stephen Curry no es el jugador con mas MVP's, Uhmmmm.. que mala suerte dividimos tu puntaje a la mitad debido a que es el jugadores con menos MVP's entre los 4 "+RESET)
-    puntaje = puntaje / 2
-  elif respuesta_5 == "D":
-    print(RED+"Casi!", nombre,",", "Michael Jordan no es el jugador con mas MVP's pero ganaste 5 puntos por que es el segundo jugador con mas MVP's"+RESET)
-    puntaje = puntaje + 5
-  elif respuesta_5 == "C":
-    print(RED+"Un poco lejos!", nombre,",", "Lebron James no es el jugador con mas MVP's"+RESET)
-    puntaje = puntaje -5
-  elif respuesta_5 == "B":
-    print(GREEN+"Grandioso", nombre, "!",",", "Kareem Abdul-Jabbar es el jugador con mas MVP's, multiplicamos tu puntaje debido a que es la pregunta mas dificil de esta trivia"+RESET)
-    puntaje = puntaje * 2
 
 
   for numero_carga in range (5,0,-1):
